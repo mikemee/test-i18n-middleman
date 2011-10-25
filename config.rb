@@ -70,7 +70,8 @@
 
 # causes errors 
 #Padrino.before_load do
-#  I18n.locale = :de
+I18n.locale = :en
+I18n.load_path += Dir[ File.join(Dir.getwd, 'locale', '*.{rb,yml}') ]
 #end
 
 # Build-specific configuration
